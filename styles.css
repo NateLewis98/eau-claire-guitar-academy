@@ -1,0 +1,104 @@
+
+
+body {
+    font-family: 'Verdana', Segoe UI, Tahoma, Geneva, sans-serif;
+    background: linear-gradient(to bottom, #f0ce7c, #f7e4b3);
+    min-height: 100vh;
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    line-height: 2.5rem;
+}
+header {
+    text-align: center;
+}
+
+img {
+    border-radius: 5px;
+    max-width: 100%;
+    height: auto;
+}
+.bold {
+    font-weight: bold;
+    text-align: center;
+}
+
+.italics {
+    font-style: italic;
+    text-align: center;
+}
+
+#contact {
+    text-align: center;
+}
+#last-p {
+    text-align: center;
+}
+.contact-section {
+    margin-top: 40px;
+    padding-top: 30px;
+    border-top: 1px solid #c4a44a;
+}
+
+.contact-section h2 {
+    margin-bottom: 20px;
+}
+
+.form-row {
+    display: flex;
+    gap: 16px;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+    flex: 1;
+}
+
+.form-field label {
+    font-size: 0.85rem;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+.form-field input,
+.form-field textarea {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+    padding: 10px;
+    border: 1px solid #c4a44a;
+    border-radius: 6px;
+}
+
+.form-field textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.contact-section button {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 12px 30px;
+    background-color: #c4a44a;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 8px;
+}
+
+.contact-section button:hover {
+    background-color: #a8893a;
+}
+
+@media (max-width: 500px) {
+    .form-row {
+        flex-direction: column;
+        gap: 0;
+    }
+}
