@@ -124,6 +124,41 @@ ul li::before {
     font-size: 1.2rem;
 }
 
+/* Testimonials */
+#testimonials {
+    margin-top: 40px;
+    padding-top: 30px;
+    border-top: 1px solid #c4a44a;
+}
+
+#testimonials h2 {
+    text-align: center;
+    font-size: 1.6rem;
+    color: #3b2f1a;
+    letter-spacing: 0.03em;
+    margin-bottom: 20px;
+}
+
+#testimonials blockquote {
+    background: rgba(247, 228, 179, 0.5);
+    border-left: 4px solid #c4a44a;
+    margin: 0 0 16px 0;
+    padding: 16px 20px;
+    border-radius: 0 8px 8px 0;
+}
+
+#testimonials blockquote p {
+    margin-bottom: 8px;
+}
+
+#testimonials cite {
+    display: block;
+    font-style: normal;
+    font-weight: bold;
+    color: #8b6914;
+    font-size: 0.9rem;
+}
+
 /* 7. Book Now heading stands out */
 .contact-section {
     margin-top: 40px;
