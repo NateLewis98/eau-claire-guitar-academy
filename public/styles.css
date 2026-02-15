@@ -62,11 +62,13 @@ header .bold {
 .bold {
     font-weight: bold;
     text-align: center;
+    font-size: 1.2em;
 }
 
 .italics {
     font-style: italic;
     text-align: center;
+    font-size: 1.2em;
 }
 
 /* 5. Style links to match gold palette */
