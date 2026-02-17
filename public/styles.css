@@ -1,11 +1,49 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    font-family: 'Verdana', 'Segoe UI', Tahoma, Geneva, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background: linear-gradient(to bottom, #f0ce7c, #f7e4b3);
     min-height: 100vh;
     max-width: 760px;
     margin: 0 auto;
     padding: 20px;
     line-height: 1.7;
+    font-size: 1.1rem;
+}
+
+.header-cta {
+    display: inline-block;
+    font-family: 'Playfair Display', Georgia, 'Times New Roman', serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 14px 50px;
+    background: linear-gradient(135deg, #c4a44a, #d4b96a);
+    color: #3b2f1a;
+    text-decoration: none;
+    border-radius: 6px;
+    margin-top: 16px;
+    margin-bottom: 8px;
+    letter-spacing: 0.05em;
+    transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
+}
+
+.header-cta:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(196, 164, 74, 0.5);
+    background: linear-gradient(135deg, #d4b96a, #e8d08a);
+    color: #3b2f1a;
+    text-decoration: none;
+}
+
+#contact a:hover {
+    color: #e8d08a;
+    text-decoration: underline;
+}
+
+.award {
+    font-size: 1.5rem;
 }
 
 /* 1. Paragraph spacing */
@@ -22,6 +60,7 @@ header {
     border-radius: 12px;
     margin-bottom: 30px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    font-family: 'Playfair Display', Georgia, 'Times New Roman', serif;
 }
 
 h1 {
@@ -42,6 +81,8 @@ header h3 {
     font-style: italic;
     margin-top: 4px;
 }
+
+
 
 /* 6. Logo shadow */
 img {
@@ -86,11 +127,13 @@ a:hover {
 #contact {
     text-align: center;
     font-size: 1.05rem;
+    
 }
 
 #contact a {
     display: inline-block;
     margin: 4px 8px;
+    color: #c4a44a;
 }
 
 #last-p {
