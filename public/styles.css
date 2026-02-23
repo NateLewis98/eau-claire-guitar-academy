@@ -13,7 +13,7 @@ body {
     font-size: 1.1rem;
 }
 
-.header-cta {
+.cta {
     display: inline-block;
     font-family: 'Playfair Display', Georgia, 'Times New Roman', serif;
     font-size: 1.2rem;
@@ -112,6 +112,10 @@ header .bold {
     font-size: 1.2em;
 }
 
+.cta-wrapper {
+    text-align: center;
+}
+
 /* 5. Style links to match gold palette */
 a {
     color: #8b6914;
@@ -202,6 +206,44 @@ ul li::before {
     font-size: 0.9rem;
 }
 
+/* Testimonials read-more toggle */
+.testimonials-toggle {
+    display: none;
+}
+
+.testimonials-extra {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+}
+
+.testimonials-toggle:checked ~ .testimonials-extra {
+    max-height: 800px;
+}
+
+.testimonials-toggle-label {
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    color: #8b6914;
+    cursor: pointer;
+    margin-top: 12px;
+    font-size: 1rem;
+}
+
+.testimonials-toggle-label::after {
+    content: "Read more testimonials \25BC";
+}
+
+.testimonials-toggle:checked ~ .testimonials-toggle-label::after {
+    content: "Show less \25B2";
+}
+
+.testimonials-toggle-label:hover {
+    color: #5a4225;
+    text-decoration: underline;
+}
+
 /* 7. Book Now heading stands out */
 .contact-section {
     margin-top: 40px;
@@ -236,7 +278,8 @@ ul li::before {
 }
 
 .form-field input,
-.form-field textarea {
+.form-field textarea,
+.form-field select {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 1rem;
     padding: 10px;
@@ -248,7 +291,8 @@ ul li::before {
 
 /* 8. Form input focus glow */
 .form-field input:focus,
-.form-field textarea:focus {
+.form-field textarea:focus,
+.form-field select:focus {
     border-color: #8b6914;
     box-shadow: 0 0 0 3px rgba(196, 164, 74, 0.25);
 }
